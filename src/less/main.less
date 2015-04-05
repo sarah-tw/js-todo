@@ -23,7 +23,7 @@ body {
 }
 .time, .welcome {
 	font-weight: bold;
-	
+
 }
 .time {
 	font-size: 10em;
@@ -73,10 +73,14 @@ body {
 }
 .todo-item {
 	&:hover {
-		.destroy {	
+		.destroy {
 			display: block;
 		}
 	}
+  &.done {
+    text-decoration: line-through;
+    opacity: 0.5;
+  }
 	.destroy {
 		display: none;
 		width: 15px;

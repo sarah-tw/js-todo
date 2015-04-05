@@ -64,7 +64,7 @@ module.exports = function(grunt) {
             sourceMap: true,
           },
           files: {
-            'build/javascripts/main.min.js': ['bower_components/jquery/dist/jquery.min.js', 'src/**/*.js']
+            'build/javascripts/main.min.js': ['bower_components/underscore/underscore-min.js', 'bower_components/jquery/dist/jquery.min.js', 'src/**/*.js']
           }
       }
     },

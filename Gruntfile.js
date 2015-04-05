@@ -90,7 +90,20 @@ module.exports = function(grunt) {
           log: true
         },
       }
-    }
+    },
+    jasmine: {
+      pivotal: {
+        src: 'src/javascripts/todo.js',
+        options: {
+          specs: 'spec/javascripts/todo-spec.js',
+          vendor: [
+            'bower_components/jquery/dist/jquery.js',
+            'bower_components/underscore/underscore.js',
+            'bower_components/jasmine-jquery/lib/jasmine-jquery.js'
+          ]
+        }
+  }
+}
   });
 
   grunt.registerTask('build', [

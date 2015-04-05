@@ -5,5 +5,6 @@
     "jquery": "1.11.1",
     "underscore":"1.8.3",
     "chai-jquery":"2.0.0",
+    "jasmine-jquery":""
   }
 }

@@ -1,10 +1,10 @@
-TODO = (function(){
+var TODO = (function(){
   function remove(event) {
     event.data.item.remove();
   }
 
   function changeStatus(event){
-    item = event.data.item;
+    var item = event.data.item;
     this.checked ? item.addClass('done') : item.removeClass('done');
   }
 

@@ -10,12 +10,17 @@
   <div id="mocha"></div>
     <script src="../node_modules/grunt-mocha/node_modules/mocha/mocha.js"></script>
     <script src="../node_modules/chai/chai.js"></script>
+    <script src="../bower_components/jquery/dist/jquery.js"></script>
+    <script src="../bower_components/underscore/underscore.js"></script>
+    <script src="../bower_components/chai-jquery/chai-jquery.js"></script>
     <script>mocha.setup('bdd')</script>
 
     <!-- Please add source files here  -->
+    <script src="../src/javascripts/todo.js"></script>
 
     <!-- Please add spec files here -->
     <script src="javascripts/main-spec.js"></script>
+    <script src="javascripts/todo-spec.js"></script>
 
     <script type="text/javascript" charset="utf-8">
       // Only tests run in real browser, injected script run if options.run == true

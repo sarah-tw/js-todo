@@ -7,6 +7,7 @@ window.onload = function(){
 			document.getElementById('name').hidden = false
 		}
 	}
+	
 	document.getElementById('name').ondblclick = function(){
 		this.hidden = true;
 		document.getElementById('input-name').hidden = false;

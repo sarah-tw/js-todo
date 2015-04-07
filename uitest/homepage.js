@@ -10,7 +10,7 @@ describe('Property details page test', function () {
       .webdrivercss('homepage', [
         {
           name: 'main',
-          elem: '.time'
+          elem: 'body'
 
         }
       ], function (err, res) {

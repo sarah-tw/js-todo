@@ -1,0 +1,66 @@
+.generate-col(@n, @i:1) when (@i <= @n) {
+	.col-@{i} {
+		float: left;
+		margin: 0 1%;
+		width: (@i * 100% / @n) - 2;
+	}
+	.generate-col(@n, @i+1);
+}
+.generate-col(4);
+
+.row {
+	width: 1300px;
+	margin: 0 auto;
+	clear: both;
+	overflow: hidden;
+	&-padding {
+		padding: 20px 0;
+	}
+}
+.bg-chocolate {
+	background-color: chocolate;
+}
+.bg-brown {
+	background-color: brown;
+}
+.box {
+	&-feature-left {
+		width:30%;
+		margin-right: 2%;
+		float: left;
+	}
+	&-feature-right {
+		width: 30%;
+		float: right;
+		margin-left: 2%;
+	}
+	&-body {
+		width: 68%;
+		float: left;
+	}
+	&-heading {
+		font-weight: bold;
+		font-size: 1.2em;
+		margin-bottom: 10px;
+	}
+	img {
+		width: 100%;
+	}
+}
+.header {
+	border-bottom: 1px solid green;
+	line-height: 50px;
+	a {
+		color: yellow;
+		text-transform: uppercase;
+		text-decoration: none;
+	}
+	.navigation {
+		float: right;
+		li {
+			display: inline-block;
+			margin: 0 30px;
+		}
+}
+
+}
